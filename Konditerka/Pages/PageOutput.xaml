@@ -8,12 +8,12 @@
       d:DesignHeight="450" d:DesignWidth="800" MinHeight="500"
       Title="PageOutput">
 
-    <Grid Background="#FF420046">
+    <Grid Background="#FF213A2F">
         <StackPanel x:Name="AddButton" Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="0" Margin="0,14,0,0">
             <ComboBox x:Name="ComboFilter" Margin="5" VerticalAlignment="Center" Width="209" Height="26" SelectionChanged="ComboFilter_SelectionChanged" FontFamily="Arial Black"/>
             <ComboBox x:Name="ComboSort" Margin="5" VerticalAlignment="Top" Width="120" Height="26" SelectionChanged="ComboSort_SelectionChanged" FontFamily="Arial Black"/>
-            <TextBox x:Name="TextSearch"  Margin="5" TextWrapping="Wrap" VerticalAlignment="Center" Width="186" Height="26" TextChanged="TextSearch_TextChanged" FontFamily="Arial Black" TabIndex="100" ToolTip="Поиск..."/>
-            <Button x:Name="AddProductsButton" Content="Панель администратора" Height="30" Width="200" Click="AddProductsButton_Click" Loaded="AddProductsButton_Loaded" FontFamily="Arial Black" Foreground="Black" Background="#FFE0C14D" />
+            <TextBox x:Name="TextSearch"  Margin="5" TextWrapping="Wrap" VerticalAlignment="Center" Width="186" Height="26" TextChanged="TextSearch_TextChanged" FontFamily="Arial Black" TabIndex="100" ToolTip="Поиск гномика..."/>
+            <Button x:Name="AddProductsButton" Content="Панель управления" Height="30" Width="200" Click="AddProductsButton_Click" Loaded="AddProductsButton_Loaded" FontFamily="Arial Black" Foreground="Black" Background="#FFF7E1A1" />
             <Button x:Name="GoToBasketButton" Margin="5,0,0,0" Height="30" Width="50" FontFamily="Arial Black" Foreground="Black" Click="GoToBasketButton_Click_1" RenderTransformOrigin="0.383,0.891" >
                 <Button.Background>
                     <ImageBrush ImageSource="/Pages/free-icon-shopping-cart-5087816.png" TileMode="None" Stretch="Uniform"/>
@@ -41,11 +41,11 @@
                                 <Image Source="{Binding CurrentPhoto}" Stretch="UniformToFill"/>
                             </Border>
                             <StackPanel Grid.Column="1" Orientation="Vertical" HorizontalAlignment="Left">
-                                <TextBlock Height="auto" Text="{Binding Product}" FontFamily="Arial Black"/>
-                                <TextBlock TextWrapping="Wrap" Height="auto" Margin="0,0,0,10" FontFamily="Arial Black"><Run Text="Категория: "/><Run Text=" "/><Run Text="{Binding Categories.NameCategory}"/></TextBlock>
-                                <TextBlock TextWrapping="Wrap" Height="auto" Margin="0,0,0,10" FontFamily="Arial Black"><Run Text="Описание: "/><Run Text=" "/><Run Text="{Binding Descripton}"/></TextBlock>
-                                <TextBlock TextWrapping="Wrap" Height="auto" Margin="0,0,0,10" FontFamily="Arial Black"><Run Text="Цена: "/><Run Text=" "/><Run Text="{Binding Price}"/></TextBlock>
-                                <Button x:Name="AddToBusketButton" Content="Добавить в корзину" Margin="0,50,300,10" Height="30" Width="150" FontFamily="Arial Black" Foreground="Black" Background="#FFE0C14D" Click="AddToBusketButton_Click"/>
+                                <TextBlock Height="auto" Text="{Binding Product}" FontFamily="Arial Black" Foreground="White"/>
+                                <TextBlock TextWrapping="Wrap" Height="auto" Margin="0,0,0,10" FontFamily="Arial Black" Foreground="White"><Run Text="Тип гномика: "/><Run Text=" "/><Run Text="{Binding Categories.NameCategory}"/></TextBlock>
+                                <TextBlock TextWrapping="Wrap" Height="auto" Margin="0,0,0,10" FontFamily="Arial Black" Foreground="White"><Run Text="Особенности: "/><Run Text=" "/><Run Text="{Binding Descripton}"/></TextBlock>
+                                <TextBlock TextWrapping="Wrap" Height="auto" Margin="0,0,0,10" FontFamily="Arial Black" Foreground="White"><Run Text="Цена, ₽: "/><Run Text=" "/><Run Text="{Binding Price}"/></TextBlock>
+                                <Button x:Name="AddToBusketButton" Content="Добавить гномика" Margin="0,50,300,10" Height="30" Width="170" FontFamily="Arial Black" Foreground="Black" Background="#FFF7E1A1" Click="AddToBusketButton_Click"/>
                             </StackPanel>
                         </Grid>
                     </Border>
