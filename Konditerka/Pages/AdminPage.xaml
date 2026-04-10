@@ -7,7 +7,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="AdminPage">
 
-    <Grid Background="#FF420046">
+    <Grid Background="#FF213A2F">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -15,14 +15,14 @@
 
         <StackPanel Orientation="Horizontal" Margin="10">
             <Button Content="Товары" Width="120" Height="32" Margin="0,0,8,0" Click="ProductsButton_Click"
-                    FontFamily="Arial Black" Foreground="Black" Background="#FFE0C14D"/>
+                    FontFamily="Arial Black" Foreground="Black" Background="#FFF7E1A1"/>
             <Button Content="Категории" Width="120" Height="32" Margin="0,0,8,0" Click="CategoriesButton_Click"
-                    FontFamily="Arial Black" Foreground="Black" Background="#FFE0C14D"/>
+                    FontFamily="Arial Black" Foreground="Black" Background="#FFF7E1A1"/>
             <Button Content="Заказы" Width="120" Height="32" Margin="0,0,8,0" Click="OrdersButton_Click"
-                    FontFamily="Arial Black" Foreground="Black" Background="#FFE0C14D"/>
+                    FontFamily="Arial Black" Foreground="Black" Background="#FFF7E1A1"/>
             <Button Content="Пользователи" Width="140" Height="32" Margin="0,0,8,0" Click="UsersButton_Click"
-                    FontFamily="Arial Black" Foreground="Black" Background="#FFE0C14D"/>
-            <Button x:Name="GoToCatalogButton" Content="Назад к каталогу" Width="140" Height="32" Margin="0,0,8,0" FontFamily="Arial Black" Foreground="Black" Background="#FFE0C14D" Click="GoToCatalogButton_Click"/>
+                    FontFamily="Arial Black" Foreground="Black" Background="#FFF7E1A1"/>
+            <Button x:Name="GoToCatalogButton" Content="Назад к гномикам" Width="140" Height="32" Margin="0,0,8,0" FontFamily="Arial Black" Foreground="Black" Background="#FFF7E1A1" Click="GoToCatalogButton_Click"/>
         </StackPanel>
 
         <Frame x:Name="AdminContentFrame" Grid.Row="1" Margin="10" NavigationUIVisibility="Hidden"/>

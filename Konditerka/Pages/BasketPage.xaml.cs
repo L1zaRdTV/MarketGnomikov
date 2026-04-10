@@ -76,7 +76,7 @@ namespace Konditerka.Pages
             {
                 if (_items.Count == 0)
                 {
-                    MessageBox.Show("Корзина пуста. Добавьте товары перед оформлением заказа.");
+                    MessageBox.Show("Корзина пуста. Добавьте гномиков перед оформлением заказа.");
                     return;
                 }
 
@@ -182,7 +182,7 @@ namespace Konditerka.Pages
                 iTextSharp.text.Font titleFont = CreatePdfFont(16f, iTextSharp.text.Font.BOLD);
                 iTextSharp.text.Font regularFont = CreatePdfFont(11f, iTextSharp.text.Font.NORMAL);
 
-                Paragraph title = new Paragraph(new Phrase("Чек кондитерской", titleFont));
+                Paragraph title = new Paragraph(new Phrase("Чек лавки гномиков", titleFont));
                 title.Alignment = Element.ALIGN_CENTER;
                 document.Add(title);
                 document.Add(new Paragraph(new Phrase($"Номер заказа: {order.IdOrder}", regularFont)));
@@ -242,7 +242,7 @@ namespace Konditerka.Pages
         private byte[] GenerateQrCode(Orders order, List<BasketItemViewModel> items)
         {
             StringBuilder qrContent = new StringBuilder();
-            qrContent.Append($"Order #{order.IdOrder} | {order.Data:dd.MM.yyyy HH:mm} | {order.Price:N2} ₽");
+            qrContent.Append($"Gnome order #{order.IdOrder} | {order.Data:dd.MM.yyyy HH:mm} | {order.Price:N2} ₽");
             qrContent.AppendLine();
             foreach (BasketItemViewModel item in items)
             {

@@ -32,13 +32,13 @@ namespace Konditerka.Pages
 
         public void Fill()
         {
-            ComboSort.Items.Add("Цена");
+            ComboSort.Items.Add("Сортировка");
             ComboSort.Items.Add("По возрастанию цены");
             ComboSort.Items.Add("По убыванию цены");
             ComboSort.SelectedIndex = 0;
             ComboFilter.SelectedIndex = 0;
             var category = AppConnect.model0db.Categories;
-            ComboFilter.Items.Add("Категория");
+            ComboFilter.Items.Add("Тип гномика");
             foreach (var item in category)
             {
                 ComboFilter.Items.Add(item.NameCategory);
@@ -87,7 +87,7 @@ namespace Konditerka.Pages
                 }
                 if (catalogs.Count > 0)
                 {
-                    tbCounter.Text = "Найдено " + catalogs.Count + " рец.";
+                    tbCounter.Text = "Найдено " + catalogs.Count + " поз.";
                 }
                 else
                 {
@@ -139,20 +139,20 @@ namespace Konditerka.Pages
                 Catalogs selectedProduct = button?.DataContext as Catalogs;
                 if (selectedProduct == null)
                 {
-                    MessageBox.Show("Не удалось определить выбранный товар.");
+                    MessageBox.Show("Не удалось определить выбранного гномика.");
                     return;
                 }
 
                 Catalogs dbProduct = AppConnect.model0db.Catalogs.FirstOrDefault(x => x.IdCatalog == selectedProduct.IdCatalog);
                 if (dbProduct == null)
                 {
-                    MessageBox.Show("Товар не найден в базе данных.");
+                    MessageBox.Show("Гномик не найден в базе данных.");
                     return;
                 }
 
                 BasketManager.AddToBasket(dbProduct);
                 decimal total = BasketManager.GetCurrentBasketTotal();
-                MessageBox.Show($"Товар \"{dbProduct.Product}\" добавлен в корзину. Текущая сумма: {total:N2} ₽");
+                MessageBox.Show($"Гномик \"{dbProduct.Product}\" добавлен в корзину. Текущая сумма: {total:N2} ₽");
             }
             catch (Exception ex)
             {

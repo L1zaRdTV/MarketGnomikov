@@ -8,14 +8,14 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="BasketPage">
 
-    <Grid Background="#FF420046" Margin="10">
+    <Grid Background="#FF213A2F" Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Корзина" FontFamily="Arial Black" FontSize="22" Foreground="White" Margin="5"/>
+        <TextBlock Text="Корзина гномиков" FontFamily="Arial Black" FontSize="22" Foreground="#FFF7E1A1" Margin="5"/>
 
         <DataGrid x:Name="BasketGrid"
                   Grid.Row="1"
@@ -26,7 +26,7 @@
                   HeadersVisibility="Column"
                   Background="White" FontFamily="Arial Black">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Товар" Width="*" Binding="{Binding ProductName}"/>
+                <DataGridTextColumn Header="Гномик" Width="*" Binding="{Binding ProductName}"/>
                 <DataGridTextColumn Header="Цена, ₽" Width="120" Binding="{Binding Price, StringFormat=N2}"/>
                 <DataGridTextColumn Header="Количество" Width="120" Binding="{Binding Quantity}"/>
                 <DataGridTextColumn Header="Сумма, ₽" Width="150" Binding="{Binding PositionTotal, StringFormat=N2}"/>
@@ -38,7 +38,7 @@
                                     Height="26"
                                     FontFamily="Arial Black"
                                     Foreground="Black"
-                                    Background="#FFE0C14D"
+                                    Background="#FFF7E1A1"
                                     Click="RemoveItemButton_Click"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
@@ -52,7 +52,7 @@
                     Height="32"
                     FontFamily="Arial Black"
                     Foreground="Black"
-                    Background="#FFE0C14D"
+                    Background="#FFF7E1A1"
                     Click="GoToCatalogButton_Click"
                     DockPanel.Dock="Left"/>
 
@@ -64,14 +64,14 @@
                         Margin="0,0,10,0"
                         FontFamily="Arial Black"
                         Foreground="Black"
-                        Background="#FFE0C14D"
+                        Background="#FFF7E1A1"
                         Click="ClearBasketButton_Click"/>
                 <Button Content="Оформить заказ"
                         Width="150"
                         Height="32"
                         FontFamily="Arial Black"
                         Foreground="Black"
-                        Background="#FFE0C14D"
+                        Background="#FFF7E1A1"
                         Click="CheckoutButton_Click"/>
             </StackPanel>
         </DockPanel>
