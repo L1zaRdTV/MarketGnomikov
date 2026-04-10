@@ -45,7 +45,7 @@ namespace Konditerka.Pages
         {
             if (AppConnect.model0db.Catalogs.Count(x => x.Product == ProductNameBox.Text) > 0)
             {
-                MessageBox.Show("Изделие с таким название уже существует!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Гномик с таким названием уже существует!", "Уведомление", MessageBoxButton.OK, MessageBoxImage.Information);
             }
 
             if (string.IsNullOrWhiteSpace(ProductNameBox.Text))

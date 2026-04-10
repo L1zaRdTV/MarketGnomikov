@@ -242,7 +242,7 @@ namespace Konditerka.Pages
         private byte[] GenerateQrCode(Orders order, List<BasketItemViewModel> items)
         {
             StringBuilder qrContent = new StringBuilder();
-            qrContent.Append($"Gnome order #{order.IdOrder} | {order.Data:dd.MM.yyyy HH:mm} | {order.Price:N2} ₽");
+            qrContent.Append($"Заказ гномиков №{order.IdOrder} | {order.Data:dd.MM.yyyy HH:mm} | {order.Price:N2} ₽");
             qrContent.AppendLine();
             foreach (BasketItemViewModel item in items)
             {
