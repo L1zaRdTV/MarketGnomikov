@@ -247,7 +247,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pages\free-icon-shopping-cart-5087816.png" />
-    <Resource Include="Images\free-icon-shopping-cart-5087816.png" />
     <Resource Include="Images\logo.png" />
     <Resource Include="Birthday_Cake_icon-icons.com_68779.ico" />
     <Content Include="Model1.Context.tt">
