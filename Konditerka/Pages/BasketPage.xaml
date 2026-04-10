@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Konditerka.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="BasketPage">
+      Title="Корзина">
 
     <Grid Background="#FF213A2F" Margin="10">
         <Grid.RowDefinitions>

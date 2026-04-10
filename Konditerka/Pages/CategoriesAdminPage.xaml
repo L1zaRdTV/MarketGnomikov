@@ -4,7 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       mc:Ignorable="d" d:DesignHeight="400" d:DesignWidth="760"
-      Title="CategoriesAdminPage">
+      Title="УправлениеКатегориями">
     <Grid Background="#FF420046">
         <Grid.RowDefinitions><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
         <DataGrid x:Name="CategoriesGrid" AutoGenerateColumns="False" SelectionChanged="CategoriesGrid_SelectionChanged" FontFamily="Arial Black" IsReadOnly="True">

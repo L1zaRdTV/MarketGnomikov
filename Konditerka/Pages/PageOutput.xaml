@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Konditerka.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800" MinHeight="500"
-      Title="PageOutput">
+      Title="КаталогГномиков">
 
     <Grid Background="#FF213A2F">
         <StackPanel x:Name="AddButton" Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="0" Margin="0,14,0,0">
