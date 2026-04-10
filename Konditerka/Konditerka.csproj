@@ -83,40 +83,35 @@
     <Compile Include="AppData\BasketManager.cs" />
     <Compile Include="AppData\CurrentUser.cs" />
     <Compile Include="AppData\ValidationPhoneAndEmail.cs" />
-    <Compile Include="Baskets.cs">
+    <Compile Include="Models\Entities\Baskets.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="BasketsCatalogs.cs">
+    <Compile Include="Models\Entities\BasketsCatalogs.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Catalogs.cs">
+    <Compile Include="Models\Entities\Catalogs.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Categories.cs">
+    <Compile Include="Models\Entities\Categories.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Cities.cs">
+    <Compile Include="Models\Entities\Cities.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.Context.cs">
+    <Compile Include="Data\EntityFramework\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.cs">
+    <Compile Include="Data\EntityFramework\Model1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Model1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Orders.cs">
+    <Compile Include="Models\Entities\Orders.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="OrdersCatalogs.cs">
+    <Compile Include="Models\Entities\OrdersCatalogs.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdminPage.xaml.cs">
@@ -146,16 +141,16 @@
     <Compile Include="Pages\UsersAdminPage.xaml.cs">
       <DependentUpon>UsersAdminPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Roles.cs">
+    <Compile Include="Models\Entities\Roles.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="StatusOrders.cs">
+    <Compile Include="Models\Entities\StatusOrders.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="sysdiagrams.cs">
+    <Compile Include="Models\Entities\sysdiagrams.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Users.cs">
+    <Compile Include="Models\Entities\Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
@@ -230,9 +225,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -254,7 +246,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Model1.edmx.sql" />
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
